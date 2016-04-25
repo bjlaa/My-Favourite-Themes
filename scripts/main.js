@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Audiolet from '../audiolet';
+import Audiolet from '../audiolet.js';
 
 class App extends React.Component {
 	AudioletApp() {
@@ -10,9 +10,7 @@ class App extends React.Component {
 	}
 	render() {
 		return(
-			<div className="piano" onClick={this.AudioletApp}>
-
-			</div>
+			<div className="piano" onClick={this.AudioletApp()}></div>
 		)
 	}
 }
